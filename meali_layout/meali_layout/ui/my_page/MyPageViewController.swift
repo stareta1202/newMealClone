@@ -15,6 +15,9 @@ class MyPageViewController: UIViewController {
     private let navigationBar = NavigationBar()
     private let collectionView: UICollectionView = .collectionView()
     
+    
+    private lazy var datasource = MyPageDatasource(collectionView: self.collectionView)
+    
     init()
     {
         super.init(nibName: nil, bundle: nil)
@@ -53,13 +56,31 @@ class MyPageViewController: UIViewController {
         let collectionViewHeight = collectionView.frame.height
         let contentHeight = collectionView.contentSize.height
         
-        let centeringI
+        let centeringInset = (collectionViewHeight - contentHeight) / 2
+        let topInset = max(centeringInset, 0)
+        
+        collectionView.contentInset = UIEdgeInsets(top: topInset, left: 0, bottom: 0, right: 0 )
     }
+    
 }
 
 extension MyPageViewController: UICollectionViewDelegate {
     func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
-//        switch datasource[indexPath]
+        switch datasource[indexPath] {
+        case .feedback:
+            let recipient = "mealigram.app@gmail.com"
+            let subject = I18N.feedbackEmailTitle
+            let body = ""
+        case .review:
+            let url = URL(string: "itms-apps://itunes.apple.com/app/id1514163957?action=write-review")
+            if let url = url, UIApplication.shared.canOpenURL(url) {
+                UIApplication.shared.open(url, options: [:], completionHandler: nil)
+            }
+        case .version:
+            break
+        
+            
+        }
         
     }
 }
@@ -76,7 +97,7 @@ private extension UIView {
         layout.minimumInteritemSpacing = 0
         let collectionView = UICollectionView(frame: .zero, collectionViewLayout: layout)
         collectionView.collectionViewLayout = layout
-        collectionView.backgroundColor = .red
+        collectionView.backgroundColor = .lightGray
         return collectionView
     }
 }
