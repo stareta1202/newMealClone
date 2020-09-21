@@ -1,0 +1,2 @@
+NSPhotoLibraryUsageDescription = "(必需）通过照片添加食谱时，需开启允许访问相册权限";
+NSCameraUsageDescription = "(必需）通过照片添加食谱时，需开启允许访问相机权限";

@@ -1,0 +1,818 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 51;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		15673FF72518E55A00C04CF6 /* UILabel+Ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15673FF62518E55A00C04CF6 /* UILabel+Ext.swift */; };
+		156740052518E5AF00C04CF6 /* UIFont+init.swift in Sources */ = {isa = PBXBuildFile; fileRef = 156740042518E5AF00C04CF6 /* UIFont+init.swift */; };
+		1567400A2518E64C00C04CF6 /* UIView+add.swift in Sources */ = {isa = PBXBuildFile; fileRef = 156740092518E64C00C04CF6 /* UIView+add.swift */; };
+		15F7E1D32514AB710010ED6D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15F7E1D22514AB710010ED6D /* AppDelegate.swift */; };
+		15F7E1D72514AB710010ED6D /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15F7E1D62514AB710010ED6D /* ViewController.swift */; };
+		15F7E1DC2514AB720010ED6D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 15F7E1DB2514AB720010ED6D /* Assets.xcassets */; };
+		15F7E1DF2514AB720010ED6D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 15F7E1DD2514AB720010ED6D /* LaunchScreen.storyboard */; };
+		15F7E1EA2514AB720010ED6D /* meali_layoutTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15F7E1E92514AB720010ED6D /* meali_layoutTests.swift */; };
+		15F7E1F52514AB720010ED6D /* meali_layoutUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15F7E1F42514AB720010ED6D /* meali_layoutUITests.swift */; };
+		15F7E20B2514AC610010ED6D /* MyPageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15F7E20A2514AC610010ED6D /* MyPageViewController.swift */; };
+		15F7E2122514AD660010ED6D /* NavigationBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15F7E2112514AD660010ED6D /* NavigationBar.swift */; };
+		15F7E2372514D93F0010ED6D /* MyPageDatasource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15F7E2362514D93F0010ED6D /* MyPageDatasource.swift */; };
+		15F7E27725185CA80010ED6D /* I18N.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15F7E27625185CA80010ED6D /* I18N.swift */; };
+		15F7E27F251863660010ED6D /* UICollectionView+Ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15F7E27E251863660010ED6D /* UICollectionView+Ext.swift */; };
+		15F7E2842518640B0010ED6D /* ClassNameProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15F7E2832518640B0010ED6D /* ClassNameProtocol.swift */; };
+		15F7E2892518A8060010ED6D /* MyPageBasicCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15F7E2882518A8060010ED6D /* MyPageBasicCell.swift */; };
+		15F7E28E2518BA2E0010ED6D /* BaseCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15F7E28D2518BA2E0010ED6D /* BaseCollectionViewCell.swift */; };
+		15F7E2982518BAD90010ED6D /* BaseViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15F7E2972518BAD90010ED6D /* BaseViewModel.swift */; };
+		81FF14959270A9E527952D1E /* Pods_meali_layoutTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 42528661D6E231AD9C0CC49C /* Pods_meali_layoutTests.framework */; };
+		A693C4F97CE8CBB4EF33E53B /* Pods_meali_layout_meali_layoutUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6BBBEB03450A542790CAD655 /* Pods_meali_layout_meali_layoutUITests.framework */; };
+		ECD25A60225CC67B7BFE05EC /* Pods_meali_layout.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AC0A6732F16D48BBF498ECC7 /* Pods_meali_layout.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		15F7E1E62514AB720010ED6D /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 15F7E1C72514AB710010ED6D /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 15F7E1CE2514AB710010ED6D;
+			remoteInfo = meali_layout;
+		};
+		15F7E1F12514AB720010ED6D /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 15F7E1C72514AB710010ED6D /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 15F7E1CE2514AB710010ED6D;
+			remoteInfo = meali_layout;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		10D85C1701FA03083AB54A81 /* Pods-meali_layout-meali_layoutUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-meali_layout-meali_layoutUITests.release.xcconfig"; path = "Target Support Files/Pods-meali_layout-meali_layoutUITests/Pods-meali_layout-meali_layoutUITests.release.xcconfig"; sourceTree = "<group>"; };
+		15673FF62518E55A00C04CF6 /* UILabel+Ext.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UILabel+Ext.swift"; sourceTree = "<group>"; };
+		156740042518E5AF00C04CF6 /* UIFont+init.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIFont+init.swift"; sourceTree = "<group>"; };
+		156740092518E64C00C04CF6 /* UIView+add.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView+add.swift"; sourceTree = "<group>"; };
+		15F7E1CF2514AB710010ED6D /* meali_layout.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = meali_layout.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		15F7E1D22514AB710010ED6D /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		15F7E1D62514AB710010ED6D /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		15F7E1DB2514AB720010ED6D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		15F7E1DE2514AB720010ED6D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		15F7E1E02514AB720010ED6D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		15F7E1E52514AB720010ED6D /* meali_layoutTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = meali_layoutTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		15F7E1E92514AB720010ED6D /* meali_layoutTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = meali_layoutTests.swift; sourceTree = "<group>"; };
+		15F7E1EB2514AB720010ED6D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		15F7E1F02514AB720010ED6D /* meali_layoutUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = meali_layoutUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		15F7E1F42514AB720010ED6D /* meali_layoutUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = meali_layoutUITests.swift; sourceTree = "<group>"; };
+		15F7E1F62514AB720010ED6D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		15F7E20A2514AC610010ED6D /* MyPageViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyPageViewController.swift; sourceTree = "<group>"; };
+		15F7E2112514AD660010ED6D /* NavigationBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NavigationBar.swift; sourceTree = "<group>"; };
+		15F7E2362514D93F0010ED6D /* MyPageDatasource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyPageDatasource.swift; sourceTree = "<group>"; };
+		15F7E27625185CA80010ED6D /* I18N.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = I18N.swift; sourceTree = "<group>"; };
+		15F7E27E251863660010ED6D /* UICollectionView+Ext.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UICollectionView+Ext.swift"; sourceTree = "<group>"; };
+		15F7E2832518640B0010ED6D /* ClassNameProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ClassNameProtocol.swift; sourceTree = "<group>"; };
+		15F7E2882518A8060010ED6D /* MyPageBasicCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyPageBasicCell.swift; sourceTree = "<group>"; };
+		15F7E28D2518BA2E0010ED6D /* BaseCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseCollectionViewCell.swift; sourceTree = "<group>"; };
+		15F7E2972518BAD90010ED6D /* BaseViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseViewModel.swift; sourceTree = "<group>"; };
+		1B9139065A561AB2F201502F /* Pods-meali_layout.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-meali_layout.debug.xcconfig"; path = "Target Support Files/Pods-meali_layout/Pods-meali_layout.debug.xcconfig"; sourceTree = "<group>"; };
+		42528661D6E231AD9C0CC49C /* Pods_meali_layoutTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_meali_layoutTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		43CAFBB41E7E23AA559FE08B /* Pods-meali_layout.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-meali_layout.release.xcconfig"; path = "Target Support Files/Pods-meali_layout/Pods-meali_layout.release.xcconfig"; sourceTree = "<group>"; };
+		4929094DD85AFBE6ED48CA08 /* Pods-meali_layoutTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-meali_layoutTests.debug.xcconfig"; path = "Target Support Files/Pods-meali_layoutTests/Pods-meali_layoutTests.debug.xcconfig"; sourceTree = "<group>"; };
+		6BBBEB03450A542790CAD655 /* Pods_meali_layout_meali_layoutUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_meali_layout_meali_layoutUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		7EE83C476FEACE06153CF868 /* Pods-meali_layout-meali_layoutUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-meali_layout-meali_layoutUITests.debug.xcconfig"; path = "Target Support Files/Pods-meali_layout-meali_layoutUITests/Pods-meali_layout-meali_layoutUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		AC0A6732F16D48BBF498ECC7 /* Pods_meali_layout.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_meali_layout.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		C2E57F4D879D208F0CF16EF5 /* Pods-meali_layoutTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-meali_layoutTests.release.xcconfig"; path = "Target Support Files/Pods-meali_layoutTests/Pods-meali_layoutTests.release.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		15F7E1CC2514AB710010ED6D /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				ECD25A60225CC67B7BFE05EC /* Pods_meali_layout.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		15F7E1E22514AB720010ED6D /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				81FF14959270A9E527952D1E /* Pods_meali_layoutTests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		15F7E1ED2514AB720010ED6D /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A693C4F97CE8CBB4EF33E53B /* Pods_meali_layout_meali_layoutUITests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		15F7E1C62514AB710010ED6D = {
+			isa = PBXGroup;
+			children = (
+				15F7E1D12514AB710010ED6D /* meali_layout */,
+				15F7E1E82514AB720010ED6D /* meali_layoutTests */,
+				15F7E1F32514AB720010ED6D /* meali_layoutUITests */,
+				15F7E1D02514AB710010ED6D /* Products */,
+				61E76855F70E3142F65EB380 /* Pods */,
+				20697F20D0F35E90DA057E3F /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		15F7E1D02514AB710010ED6D /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				15F7E1CF2514AB710010ED6D /* meali_layout.app */,
+				15F7E1E52514AB720010ED6D /* meali_layoutTests.xctest */,
+				15F7E1F02514AB720010ED6D /* meali_layoutUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		15F7E1D12514AB710010ED6D /* meali_layout */ = {
+			isa = PBXGroup;
+			children = (
+				15F7E27525185C7F0010ED6D /* resources */,
+				15F7E20F2514AD4A0010ED6D /* util */,
+				15F7E2052514ABC40010ED6D /* ui */,
+				15F7E1D22514AB710010ED6D /* AppDelegate.swift */,
+				15F7E1D62514AB710010ED6D /* ViewController.swift */,
+				15F7E1DB2514AB720010ED6D /* Assets.xcassets */,
+				15F7E1DD2514AB720010ED6D /* LaunchScreen.storyboard */,
+				15F7E1E02514AB720010ED6D /* Info.plist */,
+			);
+			path = meali_layout;
+			sourceTree = "<group>";
+		};
+		15F7E1E82514AB720010ED6D /* meali_layoutTests */ = {
+			isa = PBXGroup;
+			children = (
+				15F7E1E92514AB720010ED6D /* meali_layoutTests.swift */,
+				15F7E1EB2514AB720010ED6D /* Info.plist */,
+			);
+			path = meali_layoutTests;
+			sourceTree = "<group>";
+		};
+		15F7E1F32514AB720010ED6D /* meali_layoutUITests */ = {
+			isa = PBXGroup;
+			children = (
+				15F7E1F42514AB720010ED6D /* meali_layoutUITests.swift */,
+				15F7E1F62514AB720010ED6D /* Info.plist */,
+			);
+			path = meali_layoutUITests;
+			sourceTree = "<group>";
+		};
+		15F7E2052514ABC40010ED6D /* ui */ = {
+			isa = PBXGroup;
+			children = (
+				15F7E2092514AC4B0010ED6D /* my_page */,
+				15F7E28D2518BA2E0010ED6D /* BaseCollectionViewCell.swift */,
+				15F7E2972518BAD90010ED6D /* BaseViewModel.swift */,
+			);
+			path = ui;
+			sourceTree = "<group>";
+		};
+		15F7E2092514AC4B0010ED6D /* my_page */ = {
+			isa = PBXGroup;
+			children = (
+				15F7E20A2514AC610010ED6D /* MyPageViewController.swift */,
+				15F7E2362514D93F0010ED6D /* MyPageDatasource.swift */,
+				15F7E2882518A8060010ED6D /* MyPageBasicCell.swift */,
+			);
+			path = my_page;
+			sourceTree = "<group>";
+		};
+		15F7E20F2514AD4A0010ED6D /* util */ = {
+			isa = PBXGroup;
+			children = (
+				15F7E2112514AD660010ED6D /* NavigationBar.swift */,
+				15F7E27E251863660010ED6D /* UICollectionView+Ext.swift */,
+				15F7E2832518640B0010ED6D /* ClassNameProtocol.swift */,
+				15673FF62518E55A00C04CF6 /* UILabel+Ext.swift */,
+				156740042518E5AF00C04CF6 /* UIFont+init.swift */,
+				156740092518E64C00C04CF6 /* UIView+add.swift */,
+			);
+			path = util;
+			sourceTree = "<group>";
+		};
+		15F7E27525185C7F0010ED6D /* resources */ = {
+			isa = PBXGroup;
+			children = (
+				15F7E27625185CA80010ED6D /* I18N.swift */,
+			);
+			path = resources;
+			sourceTree = "<group>";
+		};
+		20697F20D0F35E90DA057E3F /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				AC0A6732F16D48BBF498ECC7 /* Pods_meali_layout.framework */,
+				6BBBEB03450A542790CAD655 /* Pods_meali_layout_meali_layoutUITests.framework */,
+				42528661D6E231AD9C0CC49C /* Pods_meali_layoutTests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		61E76855F70E3142F65EB380 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				1B9139065A561AB2F201502F /* Pods-meali_layout.debug.xcconfig */,
+				43CAFBB41E7E23AA559FE08B /* Pods-meali_layout.release.xcconfig */,
+				7EE83C476FEACE06153CF868 /* Pods-meali_layout-meali_layoutUITests.debug.xcconfig */,
+				10D85C1701FA03083AB54A81 /* Pods-meali_layout-meali_layoutUITests.release.xcconfig */,
+				4929094DD85AFBE6ED48CA08 /* Pods-meali_layoutTests.debug.xcconfig */,
+				C2E57F4D879D208F0CF16EF5 /* Pods-meali_layoutTests.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		15F7E1CE2514AB710010ED6D /* meali_layout */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 15F7E1F92514AB720010ED6D /* Build configuration list for PBXNativeTarget "meali_layout" */;
+			buildPhases = (
+				257C633BA2DED886982A0DA7 /* [CP] Check Pods Manifest.lock */,
+				15F7E1CB2514AB710010ED6D /* Sources */,
+				15F7E1CC2514AB710010ED6D /* Frameworks */,
+				15F7E1CD2514AB710010ED6D /* Resources */,
+				38E2269E19B318BAB828D88B /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = meali_layout;
+			productName = meali_layout;
+			productReference = 15F7E1CF2514AB710010ED6D /* meali_layout.app */;
+			productType = "com.apple.product-type.application";
+		};
+		15F7E1E42514AB720010ED6D /* meali_layoutTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 15F7E1FC2514AB720010ED6D /* Build configuration list for PBXNativeTarget "meali_layoutTests" */;
+			buildPhases = (
+				8DC09E8D943A1F77FA0F9BC4 /* [CP] Check Pods Manifest.lock */,
+				15F7E1E12514AB720010ED6D /* Sources */,
+				15F7E1E22514AB720010ED6D /* Frameworks */,
+				15F7E1E32514AB720010ED6D /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				15F7E1E72514AB720010ED6D /* PBXTargetDependency */,
+			);
+			name = meali_layoutTests;
+			productName = meali_layoutTests;
+			productReference = 15F7E1E52514AB720010ED6D /* meali_layoutTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		15F7E1EF2514AB720010ED6D /* meali_layoutUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 15F7E1FF2514AB720010ED6D /* Build configuration list for PBXNativeTarget "meali_layoutUITests" */;
+			buildPhases = (
+				5647F7905E39075F149621C6 /* [CP] Check Pods Manifest.lock */,
+				15F7E1EC2514AB720010ED6D /* Sources */,
+				15F7E1ED2514AB720010ED6D /* Frameworks */,
+				15F7E1EE2514AB720010ED6D /* Resources */,
+				E42ADCC0A2830990EAC99F0A /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				15F7E1F22514AB720010ED6D /* PBXTargetDependency */,
+			);
+			name = meali_layoutUITests;
+			productName = meali_layoutUITests;
+			productReference = 15F7E1F02514AB720010ED6D /* meali_layoutUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		15F7E1C72514AB710010ED6D /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1200;
+				LastUpgradeCheck = 1200;
+				TargetAttributes = {
+					15F7E1CE2514AB710010ED6D = {
+						CreatedOnToolsVersion = 12.0;
+					};
+					15F7E1E42514AB720010ED6D = {
+						CreatedOnToolsVersion = 12.0;
+						TestTargetID = 15F7E1CE2514AB710010ED6D;
+					};
+					15F7E1EF2514AB720010ED6D = {
+						CreatedOnToolsVersion = 12.0;
+						TestTargetID = 15F7E1CE2514AB710010ED6D;
+					};
+				};
+			};
+			buildConfigurationList = 15F7E1CA2514AB710010ED6D /* Build configuration list for PBXProject "meali_layout" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 15F7E1C62514AB710010ED6D;
+			productRefGroup = 15F7E1D02514AB710010ED6D /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				15F7E1CE2514AB710010ED6D /* meali_layout */,
+				15F7E1E42514AB720010ED6D /* meali_layoutTests */,
+				15F7E1EF2514AB720010ED6D /* meali_layoutUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		15F7E1CD2514AB710010ED6D /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				15F7E1DF2514AB720010ED6D /* LaunchScreen.storyboard in Resources */,
+				15F7E1DC2514AB720010ED6D /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		15F7E1E32514AB720010ED6D /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		15F7E1EE2514AB720010ED6D /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		257C633BA2DED886982A0DA7 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-meali_layout-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		38E2269E19B318BAB828D88B /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-meali_layout/Pods-meali_layout-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-meali_layout/Pods-meali_layout-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-meali_layout/Pods-meali_layout-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		5647F7905E39075F149621C6 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-meali_layout-meali_layoutUITests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		8DC09E8D943A1F77FA0F9BC4 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-meali_layoutTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		E42ADCC0A2830990EAC99F0A /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-meali_layout-meali_layoutUITests/Pods-meali_layout-meali_layoutUITests-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-meali_layout-meali_layoutUITests/Pods-meali_layout-meali_layoutUITests-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-meali_layout-meali_layoutUITests/Pods-meali_layout-meali_layoutUITests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		15F7E1CB2514AB710010ED6D /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				15F7E2122514AD660010ED6D /* NavigationBar.swift in Sources */,
+				15F7E2982518BAD90010ED6D /* BaseViewModel.swift in Sources */,
+				1567400A2518E64C00C04CF6 /* UIView+add.swift in Sources */,
+				15F7E2892518A8060010ED6D /* MyPageBasicCell.swift in Sources */,
+				15F7E1D72514AB710010ED6D /* ViewController.swift in Sources */,
+				15F7E2372514D93F0010ED6D /* MyPageDatasource.swift in Sources */,
+				15F7E2842518640B0010ED6D /* ClassNameProtocol.swift in Sources */,
+				15F7E28E2518BA2E0010ED6D /* BaseCollectionViewCell.swift in Sources */,
+				15F7E27F251863660010ED6D /* UICollectionView+Ext.swift in Sources */,
+				15F7E1D32514AB710010ED6D /* AppDelegate.swift in Sources */,
+				15F7E20B2514AC610010ED6D /* MyPageViewController.swift in Sources */,
+				15673FF72518E55A00C04CF6 /* UILabel+Ext.swift in Sources */,
+				156740052518E5AF00C04CF6 /* UIFont+init.swift in Sources */,
+				15F7E27725185CA80010ED6D /* I18N.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		15F7E1E12514AB720010ED6D /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				15F7E1EA2514AB720010ED6D /* meali_layoutTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		15F7E1EC2514AB720010ED6D /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				15F7E1F52514AB720010ED6D /* meali_layoutUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		15F7E1E72514AB720010ED6D /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 15F7E1CE2514AB710010ED6D /* meali_layout */;
+			targetProxy = 15F7E1E62514AB720010ED6D /* PBXContainerItemProxy */;
+		};
+		15F7E1F22514AB720010ED6D /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 15F7E1CE2514AB710010ED6D /* meali_layout */;
+			targetProxy = 15F7E1F12514AB720010ED6D /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		15F7E1DD2514AB720010ED6D /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				15F7E1DE2514AB720010ED6D /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		15F7E1F72514AB720010ED6D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		15F7E1F82514AB720010ED6D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		15F7E1FA2514AB720010ED6D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 1B9139065A561AB2F201502F /* Pods-meali_layout.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = VZTRDYYN8R;
+				IBSC_FLATTEN_NIBS = NO;
+				INFOPLIST_FILE = meali_layout/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "witchwatch.meali-layout";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		15F7E1FB2514AB720010ED6D /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 43CAFBB41E7E23AA559FE08B /* Pods-meali_layout.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = VZTRDYYN8R;
+				IBSC_FLATTEN_NIBS = NO;
+				INFOPLIST_FILE = meali_layout/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "witchwatch.meali-layout";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		15F7E1FD2514AB720010ED6D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 4929094DD85AFBE6ED48CA08 /* Pods-meali_layoutTests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = VZTRDYYN8R;
+				INFOPLIST_FILE = meali_layoutTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "witchwatch.meali-layoutTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/meali_layout.app/meali_layout";
+			};
+			name = Debug;
+		};
+		15F7E1FE2514AB720010ED6D /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = C2E57F4D879D208F0CF16EF5 /* Pods-meali_layoutTests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = VZTRDYYN8R;
+				INFOPLIST_FILE = meali_layoutTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "witchwatch.meali-layoutTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/meali_layout.app/meali_layout";
+			};
+			name = Release;
+		};
+		15F7E2002514AB720010ED6D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 7EE83C476FEACE06153CF868 /* Pods-meali_layout-meali_layoutUITests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = VZTRDYYN8R;
+				INFOPLIST_FILE = meali_layoutUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "witchwatch.meali-layoutUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = meali_layout;
+			};
+			name = Debug;
+		};
+		15F7E2012514AB720010ED6D /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 10D85C1701FA03083AB54A81 /* Pods-meali_layout-meali_layoutUITests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = VZTRDYYN8R;
+				INFOPLIST_FILE = meali_layoutUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "witchwatch.meali-layoutUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = meali_layout;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		15F7E1CA2514AB710010ED6D /* Build configuration list for PBXProject "meali_layout" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				15F7E1F72514AB720010ED6D /* Debug */,
+				15F7E1F82514AB720010ED6D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		15F7E1F92514AB720010ED6D /* Build configuration list for PBXNativeTarget "meali_layout" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				15F7E1FA2514AB720010ED6D /* Debug */,
+				15F7E1FB2514AB720010ED6D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		15F7E1FC2514AB720010ED6D /* Build configuration list for PBXNativeTarget "meali_layoutTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				15F7E1FD2514AB720010ED6D /* Debug */,
+				15F7E1FE2514AB720010ED6D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		15F7E1FF2514AB720010ED6D /* Build configuration list for PBXNativeTarget "meali_layoutUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				15F7E2002514AB720010ED6D /* Debug */,
+				15F7E2012514AB720010ED6D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 15F7E1C72514AB710010ED6D /* Project object */;
+}

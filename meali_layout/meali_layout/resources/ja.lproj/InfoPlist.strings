@@ -1,0 +1,2 @@
+NSPhotoLibraryUsageDescription = "(必須)写真を通じて献立を追加するためにアルバム接近権限が必要です。";
+NSCameraUsageDescription = "(必須)写真を通じて献立を追加するためにカメラ接近権限が必要です。";

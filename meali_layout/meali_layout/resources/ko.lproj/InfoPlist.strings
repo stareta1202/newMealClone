@@ -1,0 +1,2 @@
+NSPhotoLibraryUsageDescription = "(필수) 사진을 통해 식단, 눈바디를 추가 하기 위해 엘범 접근 권한이 필요합니다.";
+NSCameraUsageDescription = "(필수) 사진을 통해 식단, 눈바디를 추가 하기 위해 카메라 접근 권한이 필요합니다.";

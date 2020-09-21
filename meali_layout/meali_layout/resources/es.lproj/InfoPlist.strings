@@ -1,0 +1,2 @@
+NSPhotoLibraryUsageDescription = "(Obligatorio) Se requiere acceso al Album para agregar la dieta a través de fotos.";
+NSCameraUsageDescription = "(Obligatorio) Se requiere acceso al cámara para agregar la dieta a través de fotos.";
