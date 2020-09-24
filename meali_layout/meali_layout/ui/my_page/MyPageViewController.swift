@@ -8,12 +8,15 @@
 
 import UIKit
 import SnapKit
+import RxSwift
 
 
-class MyPageViewController: UIViewController {
+class MyPageViewController: BaseViewController {
     
     private let navigationBar = NavigationBar()
     private let collectionView: UICollectionView = .collectionView()
+    
+    private let viewModel = MyPageViewModel()
     
     
     private lazy var datasource = MyPageDatasource(collectionView: self.collectionView)
@@ -25,7 +28,9 @@ class MyPageViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        
         initView()
+        bind()
     }
     
     required init?(coder: NSCoder) {
@@ -48,6 +53,13 @@ class MyPageViewController: UIViewController {
                 $0.bottom.equalTo(self.view.safeAreaLayoutGuide.snp.bottom)
             }
         }
+    }
+    
+    private func bind() {
+        viewModel.$data.main
+            .bind(to: collectionView.rx.items(dataSource: datasource))
+            .disposed(by: disposeBag)
+        
     }
     
     override func viewDidLayoutSubviews() {
@@ -78,8 +90,6 @@ extension MyPageViewController: UICollectionViewDelegate {
             }
         case .version:
             break
-        
-            
         }
         
     }

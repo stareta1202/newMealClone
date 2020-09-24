@@ -8,8 +8,9 @@ target 'meali_layout' do
   # Pods for meali_layout
 	pod 'SnapKit'
 	pod 'RxDataSources'
-  pod 'RxSwift'
-
+  	pod 'RxSwift'
+	pod 'Action'
+	pod 'RxCocoa'
 
   target 'meali_layoutTests' do
     inherit! :search_paths

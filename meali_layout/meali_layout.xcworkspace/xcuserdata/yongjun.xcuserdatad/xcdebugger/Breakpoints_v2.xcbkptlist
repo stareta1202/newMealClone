@@ -30,10 +30,58 @@
             filePath = "meali_layout/ui/my_page/MyPageViewController.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "28"
-            endingLineNumber = "28"
+            startingLineNumber = "31"
+            endingLineNumber = "31"
             landmarkName = "viewDidLoad()"
             landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "080F2A4D-6834-468C-AFDF-CE943D795B2E"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "meali_layout/ui/my_page/MyPageViewController.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "48"
+            endingLineNumber = "48"
+            landmarkName = "initView()"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  uuid = "080F2A4D-6834-468C-AFDF-CE943D795B2E - ba9420596546aa71"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "meali_layout.MyPageViewController.(initView in _9EA1A74554DD773237B33B483FF006EC)() -&gt; ()"
+                  moduleName = "meali_layout"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/yongjun/Desktop/mealigram_business/newMealClone/meali_layout/meali_layout/ui/my_page/MyPageViewController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "43"
+                  endingLineNumber = "43"
+                  offsetFromSymbolStart = "441">
+               </Location>
+               <Location
+                  uuid = "080F2A4D-6834-468C-AFDF-CE943D795B2E - bed6b3e526cedc83"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #2 (__C.UICollectionView) -&gt; () in meali_layout.MyPageViewController.(initView in _9EA1A74554DD773237B33B483FF006EC)() -&gt; ()"
+                  moduleName = "meali_layout"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/yongjun/Desktop/mealigram_business/newMealClone/meali_layout/meali_layout/ui/my_page/MyPageViewController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "44"
+                  endingLineNumber = "44"
+                  offsetFromSymbolStart = "34">
+               </Location>
+            </Locations>
          </BreakpointContent>
       </BreakpointProxy>
    </Breakpoints>
