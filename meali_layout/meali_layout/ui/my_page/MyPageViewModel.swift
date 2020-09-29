@@ -17,8 +17,6 @@ class MyPageViewModel: BaseViewModel {
     lazy var isFeedbackClick: Bool = false
     lazy var chagneCollectionViewCellAction: CocoaAction = .create{ [weak self ] _ in self?.changeCollectionView() }
     
-    
-    
     override init() {
         super.init()
         updateData()
@@ -28,10 +26,9 @@ class MyPageViewModel: BaseViewModel {
         var items = [MyPageSectionItem]()
         items.append(.feedback)
         items.append(.review)
-        items.append(.version)
         
-        if isFeedbackClick == true {
-            items.remove(at: items.count - 1)
+        if !isFeedbackClick {
+            items.append(.version)
         }
         
         data = [SectionModel(model: (), items: items)]
