@@ -5,7 +5,7 @@
 //  Created by 이용준 on 2020/09/18.
 //
 
-
+import Action
 import UIKit
 import SnapKit
 import RxSwift
@@ -80,14 +80,18 @@ extension MyPageViewController: UICollectionViewDelegate {
     func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
         switch datasource[indexPath] {
         case .feedback:
+            print("feedback open")
+            viewModel.isFeedbackClick.self = true
             let recipient = "mealigram.app@gmail.com"
             let subject = I18N.feedbackEmailTitle
             let body = ""
+            self.viewModel.chagneCollectionViewCellAction.execute()
         case .review:
-            let url = URL(string: "itms-apps://itunes.apple.com/app/id1514163957?action=write-review")
-            if let url = url, UIApplication.shared.canOpenURL(url) {
-                UIApplication.shared.open(url, options: [:], completionHandler: nil)
-            }
+//            let url = URL(string: "itms-apps://itunes.apple.com/app/id1514163957?action=write-review")
+            print("opened")
+//            if let url = url, UIApplication.shared.canOpenURL(url) {
+//                UIApplication.shared.open(url, options: [:], completionHandler: nil)
+//            }
         case .version:
             break
         }

@@ -17,7 +17,7 @@ struct I18N {
     static let ok = "ok"
     static let feedbackEmailTitle = "feedbackEmailTitle"
     static let myPageTitle = "myPageTitle"
-    static let feedbackToDevelper = "feedbackToDevelper"
+    static let feedbackToDevelper = "feedback To Develper"
     static let reviewOnAppstore = "reviewOnAppstore"
     static let versionInfo = "versionInfo"
     static let yyyyMonth = "yyyyMonth"
