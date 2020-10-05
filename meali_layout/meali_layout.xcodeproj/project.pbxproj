@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		151F7CB1252B5FF100A427DD /* LocalAuthentication+Ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = 151F7CB0252B5FF100A427DD /* LocalAuthentication+Ext.swift */; };
+		151F7CB6252B606B00A427DD /* LocalAuthenticationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 151F7CB5252B606B00A427DD /* LocalAuthenticationView.swift */; };
 		15673FF72518E55A00C04CF6 /* UILabel+Ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15673FF62518E55A00C04CF6 /* UILabel+Ext.swift */; };
 		156740052518E5AF00C04CF6 /* UIFont+init.swift in Sources */ = {isa = PBXBuildFile; fileRef = 156740042518E5AF00C04CF6 /* UIFont+init.swift */; };
 		1567400A2518E64C00C04CF6 /* UIView+add.swift in Sources */ = {isa = PBXBuildFile; fileRef = 156740092518E64C00C04CF6 /* UIView+add.swift */; };
@@ -15,8 +17,6 @@
 		15F7E1D72514AB710010ED6D /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15F7E1D62514AB710010ED6D /* ViewController.swift */; };
 		15F7E1DC2514AB720010ED6D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 15F7E1DB2514AB720010ED6D /* Assets.xcassets */; };
 		15F7E1DF2514AB720010ED6D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 15F7E1DD2514AB720010ED6D /* LaunchScreen.storyboard */; };
-		15F7E1EA2514AB720010ED6D /* meali_layoutTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15F7E1E92514AB720010ED6D /* meali_layoutTests.swift */; };
-		15F7E1F52514AB720010ED6D /* meali_layoutUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15F7E1F42514AB720010ED6D /* meali_layoutUITests.swift */; };
 		15F7E20B2514AC610010ED6D /* MyPageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15F7E20A2514AC610010ED6D /* MyPageViewController.swift */; };
 		15F7E2122514AD660010ED6D /* NavigationBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15F7E2112514AD660010ED6D /* NavigationBar.swift */; };
 		15F7E2372514D93F0010ED6D /* MyPageDatasource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15F7E2362514D93F0010ED6D /* MyPageDatasource.swift */; };
@@ -55,6 +55,8 @@
 
 /* Begin PBXFileReference section */
 		10D85C1701FA03083AB54A81 /* Pods-meali_layout-meali_layoutUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-meali_layout-meali_layoutUITests.release.xcconfig"; path = "Target Support Files/Pods-meali_layout-meali_layoutUITests/Pods-meali_layout-meali_layoutUITests.release.xcconfig"; sourceTree = "<group>"; };
+		151F7CB0252B5FF100A427DD /* LocalAuthentication+Ext.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "LocalAuthentication+Ext.swift"; sourceTree = "<group>"; };
+		151F7CB5252B606B00A427DD /* LocalAuthenticationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocalAuthenticationView.swift; sourceTree = "<group>"; };
 		15673FF62518E55A00C04CF6 /* UILabel+Ext.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UILabel+Ext.swift"; sourceTree = "<group>"; };
 		156740042518E5AF00C04CF6 /* UIFont+init.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIFont+init.swift"; sourceTree = "<group>"; };
 		156740092518E64C00C04CF6 /* UIView+add.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView+add.swift"; sourceTree = "<group>"; };
@@ -66,11 +68,7 @@
 		15F7E1DE2514AB720010ED6D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		15F7E1E02514AB720010ED6D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		15F7E1E52514AB720010ED6D /* meali_layoutTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = meali_layoutTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		15F7E1E92514AB720010ED6D /* meali_layoutTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = meali_layoutTests.swift; sourceTree = "<group>"; };
-		15F7E1EB2514AB720010ED6D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		15F7E1F02514AB720010ED6D /* meali_layoutUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = meali_layoutUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		15F7E1F42514AB720010ED6D /* meali_layoutUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = meali_layoutUITests.swift; sourceTree = "<group>"; };
-		15F7E1F62514AB720010ED6D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		15F7E20A2514AC610010ED6D /* MyPageViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyPageViewController.swift; sourceTree = "<group>"; };
 		15F7E2112514AD660010ED6D /* NavigationBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NavigationBar.swift; sourceTree = "<group>"; };
 		15F7E2362514D93F0010ED6D /* MyPageDatasource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyPageDatasource.swift; sourceTree = "<group>"; };
@@ -127,8 +125,6 @@
 			isa = PBXGroup;
 			children = (
 				15F7E1D12514AB710010ED6D /* meali_layout */,
-				15F7E1E82514AB720010ED6D /* meali_layoutTests */,
-				15F7E1F32514AB720010ED6D /* meali_layoutUITests */,
 				15F7E1D02514AB710010ED6D /* Products */,
 				61E76855F70E3142F65EB380 /* Pods */,
 				20697F20D0F35E90DA057E3F /* Frameworks */,
@@ -160,24 +156,6 @@
 			path = meali_layout;
 			sourceTree = "<group>";
 		};
-		15F7E1E82514AB720010ED6D /* meali_layoutTests */ = {
-			isa = PBXGroup;
-			children = (
-				15F7E1E92514AB720010ED6D /* meali_layoutTests.swift */,
-				15F7E1EB2514AB720010ED6D /* Info.plist */,
-			);
-			path = meali_layoutTests;
-			sourceTree = "<group>";
-		};
-		15F7E1F32514AB720010ED6D /* meali_layoutUITests */ = {
-			isa = PBXGroup;
-			children = (
-				15F7E1F42514AB720010ED6D /* meali_layoutUITests.swift */,
-				15F7E1F62514AB720010ED6D /* Info.plist */,
-			);
-			path = meali_layoutUITests;
-			sourceTree = "<group>";
-		};
 		15F7E2052514ABC40010ED6D /* ui */ = {
 			isa = PBXGroup;
 			children = (
@@ -185,6 +163,7 @@
 				15F7E28D2518BA2E0010ED6D /* BaseCollectionViewCell.swift */,
 				15F7E2972518BAD90010ED6D /* BaseViewModel.swift */,
 				15F989F6251C6B8600461CF3 /* BaseViewController.swift */,
+				151F7CB5252B606B00A427DD /* LocalAuthenticationView.swift */,
 			);
 			path = ui;
 			sourceTree = "<group>";
@@ -212,6 +191,7 @@
 				156740092518E64C00C04CF6 /* UIView+add.swift */,
 				15F98A03251C6FBB00461CF3 /* ObservableType+Ext.swift */,
 				15C2ED422522FA0D00061CC3 /* Action+Ext.swift */,
+				151F7CB0252B5FF100A427DD /* LocalAuthentication+Ext.swift */,
 			);
 			path = util;
 			sourceTree = "<group>";
@@ -499,9 +479,11 @@
 				1567400A2518E64C00C04CF6 /* UIView+add.swift in Sources */,
 				15F7E2892518A8060010ED6D /* MyPageBasicCell.swift in Sources */,
 				15F989FC251C6F9100461CF3 /* ObservableProperty.swift in Sources */,
+				151F7CB1252B5FF100A427DD /* LocalAuthentication+Ext.swift in Sources */,
 				15F989F7251C6B8600461CF3 /* BaseViewController.swift in Sources */,
 				15F7E1D72514AB710010ED6D /* ViewController.swift in Sources */,
 				15F7E2372514D93F0010ED6D /* MyPageDatasource.swift in Sources */,
+				151F7CB6252B606B00A427DD /* LocalAuthenticationView.swift in Sources */,
 				15F7E2842518640B0010ED6D /* ClassNameProtocol.swift in Sources */,
 				15F7E28E2518BA2E0010ED6D /* BaseCollectionViewCell.swift in Sources */,
 				15F7E27F251863660010ED6D /* UICollectionView+Ext.swift in Sources */,
@@ -520,7 +502,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				15F7E1EA2514AB720010ED6D /* meali_layoutTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -528,7 +509,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				15F7E1F52514AB720010ED6D /* meali_layoutUITests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
