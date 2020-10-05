@@ -38,9 +38,9 @@ class BaseViewController: UIViewController {
         let context = LAContext()
         var error: NSError?
         
-        let alert = UIAlertController()
-        let successAlert = UIAlertAction(title: "인증성공", style: .destructive, handler: nil)
-        let failAlert = UIAlertAction(title: "인증실패", style: .default, handler: nil)
+        let alert = UIAlertController(title: "인증 여부?", message: "당신의 인증여부를 판단합니다", preferredStyle: .alert)
+        let successAlert = UIAlertAction(title: "인증성공", style: .default, handler: nil)
+        let failAlert = UIAlertAction(title: "인증실패", style: .destructive, handler: nil)
         
         context.canEvaluatePolicy(.deviceOwnerAuthentication, error: nil)
         context.localizedCancelTitle = "Enter UserName/Password"
@@ -52,15 +52,13 @@ class BaseViewController: UIViewController {
 
                 if success {
                     DispatchQueue.main.async {
-                        alert.title = "인증 성공"
-                        alert.message = "인증 성공하였습니다."
                         print("인증 성공")
                         alert.addAction(successAlert)
+                        self.present(alert, animated: true, completion: nil)
                     }
 
                 } else {
                     print(error?.localizedDescription ?? "Failed to authenticate")
-                    alert.addAction(failAlert)
                     
                 }
             }
