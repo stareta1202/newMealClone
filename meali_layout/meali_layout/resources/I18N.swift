@@ -20,6 +20,7 @@ struct I18N {
     static let feedbackToDevelper = "feedback To Develper"
     static let reviewOnAppstore = "reviewOnAppstore"
     static let versionInfo = "versionInfo"
+    static let addWithLock = "addLock"
     static let yyyyMonth = "yyyyMonth"
     static let emptyDetailTitle = "emptyDetailTitle"
     static let emptyDetailMessage = "emptyDetailMessage"

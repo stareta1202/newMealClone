@@ -11,6 +11,7 @@ enum MyPageSectionItem {
     case feedback
     case review
     case version
+    case addLock
     //case healthKitsync(isOn: Bool)
     //case removeAD(price: String?)
     
@@ -23,6 +24,8 @@ enum MyPageSectionItem {
             return I18N.reviewOnAppstore
         case .version:
             return I18N.versionInfo
+        case .addLock:
+            return I18N.addWithLock
 //        case .healthKitsync:
 //            return I18N.myPagehealthKitSyncTitle
 //        case .removeAD:
@@ -44,13 +47,13 @@ enum MyPageSectionItem {
             return true
 //        case .healthKitSync, .removeAD:
 //            return true
-        case .version:
+        case .version, .addLock:
             return false
         }
     }
     var rightText: String?{
         switch self {
-        case .feedback, .review:
+        case .feedback, .review, .addLock:
             return nil
 //        case .healthKitSync(let isOn):
 //            return isOn ? "ON" : "OFF"

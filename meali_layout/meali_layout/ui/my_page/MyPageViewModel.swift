@@ -15,8 +15,9 @@ class MyPageViewModel: BaseViewModel {
     private(set) var data = [MyPageSectionModel]()
     
     lazy var isFeedbackClick: Bool = false
-    lazy var chagneCollectionViewCellAction: CocoaAction = .create{ [weak self ] _ in self?.changeCollectionView() }
-    
+    lazy var isAddLockClicked: Bool = false
+    lazy var chagneCollectionViewCellAction: CocoaAction = .create{ [weak self ] _ in self?.feedbackClicked() }
+    lazy var changeCollectionViewAddLock: CocoaAction = .create { [weak self] _ in self?.addLockClicked()}
     override init() {
         super.init()
         updateData()
@@ -30,12 +31,19 @@ class MyPageViewModel: BaseViewModel {
         if !isFeedbackClick {
             items.append(.version)
         }
+        if !isAddLockClicked {
+            items.append(.addLock)
+        }
         
         data = [SectionModel(model: (), items: items)]
     }
     
-    private func changeCollectionView() {
+    private func feedbackClicked() {
         isFeedbackClick = true
+        updateData()
+    }
+    private func addLockClicked() {
+        isAddLockClicked = true
         updateData()
     }
     

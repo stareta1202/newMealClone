@@ -95,6 +95,8 @@ extension MyPageViewController: UICollectionViewDelegate {
 //            }
         case .version:
             break
+        case .addLock:
+            self.viewModel.changeCollectionViewAddLock.execute()
         }
         
     }

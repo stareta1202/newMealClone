@@ -10,7 +10,7 @@ import LocalAuthentication
 
 class BaseViewController: UIViewController {
     var disposeBag = DisposeBag()
-
+    var localAuth = LocalAuthenticationView()
     
     
     required init?(coder aDecoder: NSCoder) {
@@ -25,13 +25,16 @@ class BaseViewController: UIViewController {
         
         modalPresentationStyle = .pageSheet
     }
+    override func viewWillAppear(_ animated: Bool) {
+        //localAutentication()
+    }
     
     override func viewDidLoad() {
-        localAutentication()
-
-        super.viewDidLoad()
+        //localAutentication()
+        //localAuth.authenticationWithTouchID()
+        //super.viewDidLoad()
         
-        view.backgroundColor = .brown
+        view.backgroundColor = UIColor(red: 1, green: 0, blue: 0, alpha: 1)
     }
     
     private func localAutentication() {
@@ -55,6 +58,7 @@ class BaseViewController: UIViewController {
                         print("인증 성공")
                         alert.addAction(successAlert)
                         self.present(alert, animated: true, completion: nil)
+                        //super.viewDidLoad()
                     }
 
                 } else {

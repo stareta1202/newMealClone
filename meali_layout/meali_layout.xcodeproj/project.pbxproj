@@ -7,7 +7,6 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		151F7CB1252B5FF100A427DD /* LocalAuthentication+Ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = 151F7CB0252B5FF100A427DD /* LocalAuthentication+Ext.swift */; };
 		151F7CB6252B606B00A427DD /* LocalAuthenticationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 151F7CB5252B606B00A427DD /* LocalAuthenticationView.swift */; };
 		15673FF72518E55A00C04CF6 /* UILabel+Ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15673FF62518E55A00C04CF6 /* UILabel+Ext.swift */; };
 		156740052518E5AF00C04CF6 /* UIFont+init.swift in Sources */ = {isa = PBXBuildFile; fileRef = 156740042518E5AF00C04CF6 /* UIFont+init.swift */; };
@@ -55,7 +54,6 @@
 
 /* Begin PBXFileReference section */
 		10D85C1701FA03083AB54A81 /* Pods-meali_layout-meali_layoutUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-meali_layout-meali_layoutUITests.release.xcconfig"; path = "Target Support Files/Pods-meali_layout-meali_layoutUITests/Pods-meali_layout-meali_layoutUITests.release.xcconfig"; sourceTree = "<group>"; };
-		151F7CB0252B5FF100A427DD /* LocalAuthentication+Ext.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "LocalAuthentication+Ext.swift"; sourceTree = "<group>"; };
 		151F7CB5252B606B00A427DD /* LocalAuthenticationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocalAuthenticationView.swift; sourceTree = "<group>"; };
 		15673FF62518E55A00C04CF6 /* UILabel+Ext.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UILabel+Ext.swift"; sourceTree = "<group>"; };
 		156740042518E5AF00C04CF6 /* UIFont+init.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIFont+init.swift"; sourceTree = "<group>"; };
@@ -191,7 +189,6 @@
 				156740092518E64C00C04CF6 /* UIView+add.swift */,
 				15F98A03251C6FBB00461CF3 /* ObservableType+Ext.swift */,
 				15C2ED422522FA0D00061CC3 /* Action+Ext.swift */,
-				151F7CB0252B5FF100A427DD /* LocalAuthentication+Ext.swift */,
 			);
 			path = util;
 			sourceTree = "<group>";
@@ -479,7 +476,6 @@
 				1567400A2518E64C00C04CF6 /* UIView+add.swift in Sources */,
 				15F7E2892518A8060010ED6D /* MyPageBasicCell.swift in Sources */,
 				15F989FC251C6F9100461CF3 /* ObservableProperty.swift in Sources */,
-				151F7CB1252B5FF100A427DD /* LocalAuthentication+Ext.swift in Sources */,
 				15F989F7251C6B8600461CF3 /* BaseViewController.swift in Sources */,
 				15F7E1D72514AB710010ED6D /* ViewController.swift in Sources */,
 				15F7E2372514D93F0010ED6D /* MyPageDatasource.swift in Sources */,
